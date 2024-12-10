@@ -17,7 +17,6 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: rgb(182, 152, 209);
     width: 400px;
     height: 550px;
@@ -33,24 +32,41 @@ body{
 .todo-header{
     color: white;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .todo-input{
-    width: 300px;
+    width: 280px;
     height: 30px;
     margin-right: 10px;
     border: none;
+    border-bottom: 1px solid white;
     outline: none;
     padding: 7px;
     background-color: transparent;
+    color: white;
 }
 
 .todo-input::placeholder{
-    color: white;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
 }
 
 .add-btn{
     height: 30px;
     padding: 4px;
     cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    color: rgb(182, 152, 209);
+    font-weight: 700;
+    outline: none;
 }
+
+.add-btn:hover{
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+
